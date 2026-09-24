@@ -1,0 +1,57 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : null,
+    "version" : "1.0.0",
+    "title" : null,
+    "termsOfService" : null,
+    "contact" : null,
+    "license" : null
+  },
+  "host" : "simple-books-api.click",
+  "basePath" : "",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/books" : {
+      "get" : {
+        "tags" : [ "getBooks" ],
+        "summary" : null,
+        "description" : null,
+        "operationId" : "getBooks",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/getBooks"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "getBooks" : {
+      "properties" : {
+        "id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "available" : {
+          "type" : "boolean"
+        }
+      }
+    }
+  }
+}
