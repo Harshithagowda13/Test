@@ -5,8 +5,15 @@
     "version": "1.0.0"
   },
   "host": "simple-books-api.click",
+  "basePath": "/",
   "schemes": [
     "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
   ],
   "paths": {
     "/books": {
